@@ -1,8 +1,9 @@
 <template>
-  <div class="text-pink-300">在这里添加内容</div>
+  <Menu />
 </template>
 
 <script setup lang="ts">
+import Menu from '@/layouts/index.vue'
 // import { Ref, reactive } from 'vue';
 
 /* 在这里添加你的代码 */
