@@ -16,4 +16,11 @@ export default defineConfig({
     // hmr: true, 热更新（hmr）默认开启，如若未开启可设置
     open: true, // 启动开发服务器时自动打开浏览器
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern-compiler',
+      },
+    },
+  },
 })
