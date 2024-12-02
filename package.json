@@ -4,8 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc -b && vite build",
+    "serve": "vite",
+    "build:staging": "vue-tsc -b && vite build --mode staging",
+    "build:production": "vue-tsc -b && vite build --mode production",
     "preview": "vite preview",
     "lint": "eslint src",
     "lint:fix": "eslint --fix src",
@@ -18,7 +19,8 @@
   "dependencies": {
     "@ant-design/icons-vue": "^7.0.1",
     "ant-design-vue": "4.x",
-    "vue": "^3.5.12"
+    "vue": "^3.5.12",
+    "vue-router": "4"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.0",
