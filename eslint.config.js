@@ -26,7 +26,7 @@ export default [
     files: ['**/*.vue'],
     languageOptions: { parserOptions: { parser: tseslint.parser } },
     rules: {
-      // 'vue/multi-word-component-names': 'off', // 禁用 vue/multi-word-component-names 规则=>单名称命名
+      'vue/multi-word-component-names': 'off', // 禁用 vue/multi-word-component-names 规则=>单名称命名
     },
   },
 ]

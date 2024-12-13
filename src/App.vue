@@ -1,12 +1,27 @@
+<!-- <script setup lang="ts">
+import 'dayjs/locale/zh-cn'
+import zhCN from 'ant-design-vue/es/locale/zh_CN'
+import { RouterView } from 'vue-router'
+
+import { themeConfig } from './config/theme'
+</script>
+
 <template>
-  <Menu />
+  <a-config-provider
+    :locale="zhCN"
+    :theme="{
+      token: themeConfig.default,
+    }"
+  >
+    <RouterView />
+  </a-config-provider>
+</template> -->
+<template>
+  <a-config-provider>
+    <RouterView />
+  </a-config-provider>
 </template>
 
 <script setup lang="ts">
-import Menu from '@/layouts/index.vue'
-// import { Ref, reactive } from 'vue';
-
-/* 在这里添加你的代码 */
+import { RouterView } from 'vue-router'
 </script>
-
-<style lang="scss" scoped></style>
